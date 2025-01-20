@@ -12,6 +12,12 @@
     display: flex;
   }
   
+  body{
+    background: whitesmoke;
+  }
+  .text-center{
+    text-align: center;
+  }
 
   /* nav related styles */
   header{
@@ -88,6 +94,9 @@
     font-weight: 400;
     margin-top: 24px;
   }
+  .boy-img{
+    max-width: 420px;
+  }
   .enroll-btn{
     background: black;
     color: white;
@@ -97,6 +106,117 @@
     margin-top: 24px;
 }
 
+/* main related styles */
+
+ main > section{
+    margin-top: 100px;
+ }
+
+ .pk{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+ }
+
+ .title{
+    font-weight: 700;
+    font-size: 3rem;
+ }
+
+ .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    gap: 24px;
+    text-align: center;
+ }
+
+ .card{
+    max-width: 350px;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 19px;
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    padding: 25px 14px;
+ }
+ #color-1{
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+ }
+ #color-2{
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+ }
+ #color-3{
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+ }
+ #new-1{
+    text-decoration: none;
+    color: #64C8FF;
+    font-weight: 700;
+    margin-top: 24px;
+ }
+ #new-2{
+    text-decoration: none;
+    color: #F0AA00;
+    font-weight: 700;
+    margin-top: 24px;
+ }
+ #new-3{
+    text-decoration: none;
+    color: #8700FF;
+    font-weight: 700;
+    margin-top: 24px;
+ }
+ .arroww{
+    margin-top: 100px;
+ }
+ .arrow{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+ }
+ .round{
+    background: orange;
+    border-radius: 50%;
+    border: none;
+    width: 60px;
+    color: white;
+    font-size: 2rem;
+    height: 60px;
+ }
+
+ .story{
+    background: url("./assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+ }
+ .pk-2{
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ .story-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 300px;
+ }
+ .story-card{
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+ }
+ .story-card img{
+    border-radius: 12px 12px 0 0;
+ }
+
+ #first-1{
+    grid-row: span 2;
+ }
 
 
 /* small device responsive */
@@ -105,5 +225,8 @@
     .banner{
         flex-direction: column;
         text-align: center;
+    }
+    .boy-img{
+        width: 100%;
     }
  }
