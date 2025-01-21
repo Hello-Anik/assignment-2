@@ -281,6 +281,43 @@
   text-align: center;
   margin-top: 100px;
  }
+ /* .footer related styles */
+
+ footer{
+  background: #01ACFD;
+ }
+
+ .footer{
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  color: white;
+  
+  padding: 100px 10px;
+ }
+
+  
+.links{
+  display: inline;
+  margin-top: 24px;
+}
+
+ .nav{
+  text-decoration: none;
+  color: white;
+  
+ }
+
+ .nav-link{
+  margin-bottom: 20px;
+  
+ }
+ .Touch{
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+ }
+
 /* small device responsive */
 
  @media  screen and (max-width:576px) {
@@ -312,5 +349,11 @@
       grid-template-columns: repeat(2, 1fr);
       width: 100%;
     }
+   .footer
+   {
+    flex-direction: column;
+    justify-items: center;
+   }
+  
    
  }
