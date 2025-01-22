@@ -213,11 +213,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    
  }
  .story-card{
     border-radius: 16px;
     background: rgb(255, 255, 255);
+ }
+ .story-2{
+  max-width: 300px;
  }
  .story-card img{
     border-radius: 12px 12px 0 0;
@@ -227,7 +229,7 @@
 
  #first-1{
     grid-row: span 2;
-    width: 600px;
+    width: 500px;
  }
  .text{
   margin: 0 15px;
@@ -246,7 +248,7 @@
  }
  .text button{
   border: none;
-  padding: 10px 25px;
+  padding: 10px 1.25rem;
   background: #3CD8E8;
   border-radius: 50px;
   color: white;
@@ -347,7 +349,6 @@
     .story-cards{
       grid-template-rows: repeat(2, 1fr);
       grid-template-columns: repeat(2, 1fr);
-      width: 100%;
     }
    .footer
    {
@@ -355,5 +356,13 @@
     justify-items: center;
    }
   
-   
+   marquee{
+    display: none;
+   }
+ }
+
+ /* large device responsive */
+
+ @media screen and (min-width:576px) and (max-width:992px) {
+  
  }
